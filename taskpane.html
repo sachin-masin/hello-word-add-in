@@ -18,6 +18,7 @@
 <script>
     Office.onReady((info) => {
         // Check that we loaded into Word
+        console.log('info', info)
         if (info.host === Office.HostType.Word) {
             document.getElementById("helloButton").onclick = sayHello;
         }
